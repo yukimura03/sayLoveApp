@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sayILoveYou" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="JLt-9a-PK7">
+                                <rect key="frame" x="16" y="50" width="354" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="5MP-TW-Lt2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="Efd-w1-Ozs">
+                                <rect key="frame" x="175" y="129" width="239" height="607"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-Hk-gL6">
+                                <rect key="frame" x="43" y="507" width="158" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="pKs-6F-jTb"/>
+                                </constraints>
+                                <state key="normal" image="love"/>
+                                <connections>
+                                    <action selector="sayLove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sw-A4-CKe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM8-q8-w12">
+                                <rect key="frame" x="66" y="106" width="259" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="msg-TF-fAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタンを押してねっ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-ei-fG7">
+                                <rect key="frame" x="43" y="384" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cf5-ei-fG7" firstAttribute="leading" secondItem="Lcn-Hk-gL6" secondAttribute="leading" id="5Yb-NR-2Zn"/>
+                            <constraint firstAttribute="trailing" secondItem="Efd-w1-Ozs" secondAttribute="trailing" id="9Fp-Rl-xq4"/>
+                            <constraint firstItem="Efd-w1-Ozs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="AQQ-ri-nZX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lcn-Hk-gL6" secondAttribute="trailing" constant="213" id="CBL-OA-rfc"/>
+                            <constraint firstItem="JLt-9a-PK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HsN-h7-Zey"/>
+                            <constraint firstItem="Efd-w1-Ozs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="LMz-wA-kQQ"/>
+                            <constraint firstItem="Efd-w1-Ozs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q6u-VY-2fK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jM8-q8-w12" secondAttribute="trailing" constant="89" id="Rj9-Gw-ubX"/>
+                            <constraint firstItem="jM8-q8-w12" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="Rwb-EC-qYq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cf5-ei-fG7" secondAttribute="trailing" constant="160" id="VE8-c5-40H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lcn-Hk-gL6" secondAttribute="bottom" constant="155" id="Y14-rO-VyM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JLt-9a-PK7" secondAttribute="trailing" constant="44" id="YNh-yb-JxD"/>
+                            <constraint firstItem="Cf5-ei-fG7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="f2O-DW-Mzl"/>
+                            <constraint firstItem="Cf5-ei-fG7" firstAttribute="top" secondItem="JLt-9a-PK7" secondAttribute="bottom" constant="81" id="gaq-cp-SgG"/>
+                            <constraint firstItem="jM8-q8-w12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="un4-n2-DEv"/>
+                            <constraint firstItem="JLt-9a-PK7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="wcb-Sn-e88"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="language" destination="Cf5-ei-fG7" id="G3s-QV-Mzi"/>
+                        <outlet property="wordOfLove" destination="jM8-q8-w12" id="XJi-1h-yVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="132.06521739130434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frame" width="169" height="140"/>
+        <image name="girl" width="62" height="200"/>
+        <image name="love" width="166" height="66"/>
+    </resources>
+</document>
