@@ -48,6 +48,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dic = segue.destination as! TableViewController
+        
+        dic.word = word
+        dic.lang = lang
+        
+    }
+    
 
 }
 
